@@ -1,0 +1,45 @@
+body{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    padding-left: 20px;
+    background: url(assests/img/image-bg.jpg) ;
+    
+
+}
+.navbar{
+    padding-left: 50px;
+    padding-right: 50px;
+    background-color: rgba(255, 255, 255, 0.74);
+
+}
+.nav-link{
+    font-family: sans-serif;
+    margin: 10px;
+}
+ul li {
+    padding:  5px 0;
+}
+#search{
+    justify-content: center;
+}
+.search-bar{
+    max-width: 600px;
+    padding-top: 50px;
+}  
+.menu-name{
+
+    text-align: center;
+}
+.menu-style{
+    justify-content: center;
+    width: 250px;
+    height: 300px;
+    overflow: hidden;
+}
+.list-item{
+    float: left;
+    margin:5px;
+    padding: auto;
+    font-weight: 400;
+}
