@@ -43,3 +43,34 @@ ul li {
     font-weight: 400;
    
 }
+#errorText{
+    font-size: 1.5rem;
+    text-align: center;
+    padding-top: 50px;
+}
+#error-text{
+    display: none;
+    color: crimson;
+    text-align: center;
+}
+#meal-details img{
+    object-fit: cover;
+    margin: auto;
+    width: 50%;
+    height: 50%;
+    border-radius: 10px;
+    background-color: black;
+    align-items: center;
+    padding-top: 10px;
+}
+#mealPreviewList{
+    list-style-type: none;
+    color: white;
+    padding: 5px, 5px;
+    background-color: rgb(0, 0, 0);
+    text-align: center;
+}
+#preview-img{
+    background-color: white;
+    padding-top: 20px;
+}

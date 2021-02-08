@@ -43,21 +43,32 @@
             </div>
           </nav>
     </section>
-    <div class="search-bar m-auto">
-      <div class="d-flex">
-          <input class="form-control me-2" id="searchMeal" type="search" placeholder="Search Your Meal..." aria-label="Search">
-          <button class="btn btn-outline bg-warning" onclick="searchMealContent()" type="submit">Search</button>
+    <main class="container">
+      <div class="search-bar m-auto">
+          <div class="d-flex">
+              <input class="form-control me-2" id="item-searched" type="search" placeholder="Search Your Meal"
+                  aria-label="Search">
+              <button class="btn btn-outline bg-warning" onclick="searchMeal()" type="submit">Search</button>
+          </div>
       </div>
-  </div>
+       <h3 id="error-text">
 
-  <div id="mealItems" class="mt-5">
+       </h3>
 
-      <div class="row row-cols-md-4 g-4" id="mealContainer">
+      <div id="mealPreview">
           
       </div>
 
-  </div>
+      <!-- meal card container  -->
+      <div id="singleMealBox" class="mt-5">
 
+          <div class="row me row-cols-md-4 g-4" id="mealBox">
+
+          </div>
+
+      </div>
+      
+  </main>
     
     
     
