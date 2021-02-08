@@ -12,15 +12,18 @@ const searchMeal = () => {
     }
 }
 
-const searchByLetter = (letter) => {
-    fetch(`https://www.themealdb.com/api/json/v1/1/search.php?f=${letter}`)
-        .then(res => res.json())
-        .then(data => displayFoodItem(data))
-        .catch((error) => {
-            document.getElementById('error-text').style.display = "block"
-        })
-}
+const searchByLetter = async(letter) => {
+    const url = `https://www.themealdb.com/api/json/v1/1/search.php?f=${letter}`
 
+        try{
+            const res = await fetch(url)
+            const data = await res.json();
+             displayFoodItem(data)
+        }
+        catch{
+            console.log("Search Result Doesn't Match");
+        }
+}
 const mealItemName = (mealName) => {
     fetch(`https://www.themealdb.com/api/json/v1/1/search.php?s=${mealName}`)
         .then(res => res.json())
